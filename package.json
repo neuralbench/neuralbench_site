@@ -1,9 +1,12 @@
 {
-  "name": "my-project",
+  "name": "neuralbench_site",
+  "homepage": "https://neuralbench.github.io/neuralbench_site/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "dev": "concurrently \"npm run build:css\" \"vite\"",
     "build:css": "tailwindcss -i src/index.css -o dist/index.css --watch",
     "build": "vite build",
@@ -23,6 +26,7 @@
     "eslint-plugin-react": "^7.33.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.5",
+    "gh-pages": "^6.1.1",
     "postcss": "^8.4.38",
     "tailwindcss": "^3.4.4",
     "vite": "^5.1.4"
