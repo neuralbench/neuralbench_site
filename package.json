@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -d dist",
     "dev": "concurrently \"npm run build:css\" \"vite\"",
     "build:css": "tailwindcss -i src/index.css -o dist/index.css --watch",
     "build": "vite build",
