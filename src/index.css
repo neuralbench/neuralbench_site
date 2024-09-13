@@ -1,7 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap');
+
+@import '@fortawesome/fontawesome-free/css/all.min.css';
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 
 
 :root {
@@ -21,6 +25,9 @@
 
 html {
   scroll-behavior: smooth;
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 a {
@@ -72,12 +79,12 @@ button:focus-visible {
   align-items: center;
 }
 
-.bg-svg-background {
+/* .bg-svg-background {
   position: relative;
   background-image: url('../src/assets/image.svg');
   background-size: cover;
   background-position: center;
-}
+} */
 
 .bg-svg-background::before {
   content: '';
